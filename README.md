@@ -1,1 +1,1 @@
-# Ejercico Clase_2 Curso React
+# Ejercicio Clase_2 Curso React
