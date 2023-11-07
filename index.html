@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script src="script.js" defer></script>
+  <title>Calculadora</title>
+</head>
+<body class="d-flex flex-column min-vh-100 justify-content-center">
+  <div class="container">
+    <form class="row">
+      <div class="col-lg-4 col-md-6 col-sm-8 col-10 mx-auto shadow p-3 rounded bg-light border">
+        <h1 class="text-center text-uppercase fs-5 mb-4">Calculadora</h1>
+        <div class="row mb-4">
+          <div class="col-10 btn-group mx-auto" role="group" aria-label="Basic outlined example">
+            <button type="submit" class="btn btn-outline-dark" id="suma">+</button>
+            <button type="submit" class="btn btn-outline-dark" id="resta">-</button>
+            <button type="submit" class="btn btn-outline-dark" id="multiplicacion">x</button>
+            <button type="submit" class="btn btn-outline-dark" id="division">/</button>
+          </div>
+        </div>
+        <div class="row mb-3">
+          <div class="col-6 mb-2">
+            <label for="valor-a" class="form-label">Operando 1</label>
+            <input class="form-control form-control-sm" type="number" id="valor-a" required>
+          </div>
+          <div class="col-6 mb-2">
+            <label for="valor-b" class="form-label">Operando 2</label>
+            <input class="form-control form-control-sm" type="number" id="valor-b" required>
+          </div>
+        </div>
+        <div class="row">
+          <h2 class="fs-6">Resultado: <span class="bg-dark-subtle p-2 rounded" id="resultado"> --- </span></h2>
+        </div>
+      </div>
+    </form>
+  </div>
+</body>
+</html>
