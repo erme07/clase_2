@@ -16,11 +16,13 @@ const multiplicacion = (a, b) => Number(a) * Number(b)
 const division = (a, b) => (Number(b) === 0) ? "infinito" : Number(a) / Number(b)
 
 const operar = (operacion) => {
+  resultado.classList.remove("d-none")
   if (!(valor_a.value === "" || valor_b.value === ""))
     resultado.innerHTML = operacion(valor_a.value, valor_b.value)
   else 
     resultado.innerHTML = "ingrese los valores"
 }
+
 const mostrarSimbolo = (valor) => {
   simbolo.classList.remove("d-none")
   simbolo.innerHTML= simbolos[valor]

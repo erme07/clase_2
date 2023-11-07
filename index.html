@@ -8,34 +8,34 @@
   <script src="script.js" defer></script>
   <title>Calculadora</title>
 </head>
-<body class="d-flex flex-column min-vh-100 justify-content-center">
+<body class="d-flex flex-column min-vh-100 justify-content-center bg-success bg-opacity-25">
   <div class="container">
     <form class="row">
       <div class="col-lg-4 col-md-6 col-sm-8 col-10 mx-auto shadow p-3 rounded bg-light border">
-        <h1 class="text-center text-uppercase fs-5 mb-4">Calculadora</h1>
+        <h1 class="text-center text-uppercase fs-5 mb-4 bg-dark rounded p-2 text-white">Calculadora</h1>
         <div class="row mb-4">
           <div class="col-10 btn-group mx-auto" role="group" aria-label="Basic outlined example">
-            <button type="submit" class="btn btn-outline-dark" id="suma">+</button>
-            <button type="submit" class="btn btn-outline-dark" id="resta">-</button>
-            <button type="submit" class="btn btn-outline-dark" id="multiplicacion">x</button>
-            <button type="submit" class="btn btn-outline-dark" id="division">/</button>
+            <button type="submit" class="btn btn-outline-dark" id="suma" title="sumar">+</button>
+            <button type="submit" class="btn btn-outline-dark" id="resta" title="restar">-</button>
+            <button type="submit" class="btn btn-outline-dark" id="multiplicacion" title="multiplicar">x</button>
+            <button type="submit" class="btn btn-outline-dark" id="division" title="dividir">/</button>
           </div>
         </div>
         <div class="row mb-3">
-          <div class="col-5 mb-2 text-center">
+          <div class="col mb-2 text-center">
             <label for="valor-a" class="form-label fw-medium">Valor A</label>
             <input class="form-control form-control-sm" type="number" id="valor-a" placeholder="Ingrese un número" required>
           </div>
-          <div class="col-2 d-flex align-items-end justify-content-center">
+          <div class="col-1 d-flex align-items-end justify-content-center">
             <p id="simbolo-operacion" class="fs-5 fw-medium"></p>
           </div>
-          <div class="col-5 mb-2 text-center">
+          <div class="col mb-2 text-center">
             <label for="valor-b" class="form-label fw-medium">Valor B</label>
             <input class="form-control form-control-sm" type="number" id="valor-b" placeholder="Ingrese un número" required>
           </div>
         </div>
         <div class="row">
-          <h2 class="fs-6">Resultado: <span class="bg-dark-subtle p-2 rounded" id="resultado"> --- </span></h2>
+          <h2 class="fs-6">Resultado: <span class="bg-dark-subtle p-2 rounded d-none" id="resultado"></span></h2>
         </div>
       </div>
     </form>
