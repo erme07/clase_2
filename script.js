@@ -2,16 +2,10 @@ const resultado = document.getElementById("resultado");
 const valor_a = document.getElementById("valor-a");
 const valor_b = document.getElementById("valor-b");
 
-
 const suma = (a,b) =>  Number(a) + Number(b)
 const resta = (a,b) => Number(a) - Number(b)
 const multiplicacion = (a, b) => Number(a) * Number(b)
-
-const division = (a, b) => {
-  if (Number(b) === 0)
-    return "infinito"
-  return Number(a) / Number(b)
-}
+const division = (a, b) => (Number(b) === 0) ? "infinito" : Number(a) / Number(b)
 
 const operar = (operacion) => {
   if (!(valor_a.value === "" || valor_b.value === ""))
